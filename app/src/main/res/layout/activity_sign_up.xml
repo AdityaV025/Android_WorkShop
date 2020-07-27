@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:padding="26dp">
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Create a New Account"
+        android:textColor="@color/colorAccent"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_account"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/open_sans"
+        android:hint="Enter Name *"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="17sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/open_sans"
+        android:hint="Enter Email *"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="17sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/open_sans"
+        android:hint="Create Password *"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="17sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="51dp"
+        android:text="Create Account"
+        android:background="@drawable/custom_button_background"
+        android:textColor="#ffff"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"/>
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_btn"
+        android:layout_marginTop="17dp"
+        android:text="Already Have an Account?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/open_sans_semibold"/>
+
+    <TextView
+        android:id="@+id/signIn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_btn"
+        android:layout_toEndOf="@+id/bottomText"
+        android:layout_marginTop="17dp"
+        android:text="@string/sign_in"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>
